@@ -4,26 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALina's CV</title>
+    <title>Alina's CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
+        <img src="images/cv.jpg" alt="a picture of Alina" class="avatar">
         <h1>Alina Muravyeva</h1>
         <p class="subtitle">Software Engineer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code-example">Code</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="container">
-        <section class="section">
+        <section class="section" id="about">
             <h2>About Me</h2>
             <p> Former bartender/supervisor with 7 years in cruise ship hospitality, transitioning into tech. Currently
                 pursuing a Bachelor's in Computer Science, with internship experience assisting software engineers on
                 data-driven projects. Brings strong discipline, composure under pressure, and problem-solving skills to
-                entry-level IT support and software development roles..</p>
+                entry-level IT support and software development roles.</p>
         </section>
 
-        <section class="section">
+        <section class="section" id="skills">
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li>Programming: Python, Java</li>
@@ -32,16 +44,45 @@
             </ul>
         </section>
 
-        <section class="section">
+        <section class="section" id="code-example">
+            <h2>Code Sample</h2>
+            <p>A short C function from one of my coursework exercises:</p>
+            <pre><code>void sort_pairs(void)
+{
+    for (int i = 0; i < pair_count - 1; i++)
+    {
+        for (int j = 0; j < pair_count - 1; j++)
+            if (preferences[pairs[j].winner][pairs[j].loser] <
+                preferences[pairs[j + 1].winner][pairs[j + 1].loser])
+            {
+                pair temporary = pairs[j];
+                pairs[j] = pairs[j + 1];
+                pairs[j + 1] = temporary;
+            }
+    }
+}</code></pre>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="entry">
+                <p>I do not have any public projects, only coursework (The Odin Project, HarvardCS50, FreeCodeCamp)</p>
+                <a href="https://github.com/roshester010-byte/css-exercises-1" target="_blank"
+                    rel="noopener noreferrer">View source on GitHub</a>
+            </div>
+        </section>
+
+
+        <section class="section" id="experience">
             <h2>Experience</h2>
             <div class="entry">
                 <h3>It Support Technician / Intern — Virgin Voyages</h3>
                 <p class="dates">Feb 2026 – Present</p>
-                <p>Worked with client data under the supervision of software engineers, gaining exposure to data
-                    handling and structured workflows</p>
+                <li>Worked with client data under the supervision of software engineers, gaining exposure to data
+                    handling and structured workflows</li>
                 <h3> Bartender/Bar Supervisor — Virgin Voyages</h3>
                 <p class="dates"> Jan 2019 – Present</p>
-                <p>
+
                 <ul>
                     <li>Managed bar inventory and stock ordering</li>
                     <li>Supervised and coordinated a team of bar servers</li>
@@ -49,20 +90,20 @@
                     </li>
                     <li>Built strong guest rapport, contributing to a luxury service experience</li>
                 </ul>
-                </p>
 
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="education">
             <h2>Education</h2>
             <div class="entry">
                 <h3>Bachelor (Hons) — The Institute of Technology of Malta (OPIT)</h3>
                 <p class="dates">2026 – 2029</p>
             </div>
+            <p><strong>English proficiency:</strong> Fluent (professional working proficiency)</p>
         </section>
 
-        <section class="section">
+        <section class="section" id="contact">
             <h2>Contact</h2>
             <p>Email: roshester010@gmail.com</p>
             <p>LinkedIn: linkedin.com/in/alinamuravyeva</p>
@@ -70,7 +111,13 @@
     </main>
 
     <footer class="footer">
+        <a href="https://github.com/roshester010-byte" target="_blank" rel="noopener noreferrer">
+            <img src="https://github.com/rolling-scopes-school/qualifying-stage/raw/main/tasks/cv/images/rs-school-logo.svg"
+                alt="RS School logo" class="rs-logo">
+        </a>
         <p>&copy; 2026 Alina Muravyeva</p>
+        <a href="https://github.com/alinamuravyeva" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://rs.school/courses/short-track" target="_blank" rel="noopener noreferrer">RS School Course</a>
     </footer>
 </body>
 
